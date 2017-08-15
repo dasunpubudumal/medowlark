@@ -2,27 +2,35 @@
 <html>
 
 <head>
-    <title>Meadowlark Travel</title>
+    <title>{{{title}}}</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/custom.css">
+    {{{_sections.head}}}
 </head>
 
 <body>
     <div class="container-fluid" align="center">
         <header>
             <div id="logo">
-                <blockquote>Hello</blockquote>
-                <img class="img-thumbnail"  src="/img/cclub.jpg" alt="Linux Mint - Fast and Efficient">
+                <img class="img-thumbnail" src="/img/apple.png" alt="Linux Mint - Fast and Efficient">
+            </div>
+            <div class="container" align="left">
+                {{> weather}} <!-- This will look for weather.handlebars in partials folder by default-->
             </div>
         </header>
     </div>
 
     <div class="container" align="center">
-        {{{body}}}
+        {{{body}}} 
+        {{!-- We call these "Templating" 
+        i.e. writing in one language (HTML) but having multiplie languages embedded with the code.--}}
     </div>
 
+
     <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/jquery-3.2.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    {{{_sections.jquery}}}
+
 </body>
 
 </html>

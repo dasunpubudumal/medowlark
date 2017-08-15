@@ -9,8 +9,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.4",
+    "express-handlebars-sections": "^1.0.1",
     "express3-handlebars": "^0.5.2",
+    "formidable": "^1.1.1",
     "reload": "^2.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "zombie": "^5.0.7"
   }
 }
