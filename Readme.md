@@ -1,6 +1,6 @@
 # Course notes for Web Development with Node and Express - Ethan Brown.
 
-I will add the course notes in this Readme file.
+I will add the course notes in this Readme file. (Note - I'm using VS Code as the IDE.)
 
 1. Difference between POST and GET reqests.
 
