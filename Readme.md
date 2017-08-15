@@ -2,7 +2,7 @@
 
 I will add the course notes in this Readme file. (Note - I'm using VS Code as the IDE.)
 
-1. Difference between POST and GET reqests.
+***Difference between POST and GET reqests.***
 
 
 * GET - Requests a resource from the server. This might be a webpage or any other resource.
@@ -11,7 +11,8 @@ I will add the course notes in this Readme file. (Note - I'm using VS Code as th
 
 This is an example for a POST request.
 
-~~~~app.post('/contest/vacation-photo/:year/:month', function(req,res){ //:year and :month are specified as 'route parameters'
+~~~~
+app.post('/contest/vacation-photo/:year/:month', function(req,res){ //:year and :month are specified as 'route parameters'
     var form = formidable.IncomingForm();
     form.parse(req, function(err, fields, files){
         if(err) return res.redirect(303,'/404');    //Redirect to an error page. Not necessarily an 404.
